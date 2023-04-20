@@ -1,6 +1,7 @@
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: arial, sans-serif;
 }
+
 h1 {
   color: #878787;
   font-size: 24px;
@@ -8,67 +9,38 @@ h1 {
   line-height: 28px;
   margin-bottom: 0;
 }
-.weather-app {
-  border: 1px solid #dadde1;
-  background-color: #878787;
-  padding: 15px;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 600px;
-}
-.search-form {
-  margin-bottom: 20px;
-}
-.form-control {
-  display: block;
-  width: 100%;
-  height: calc(1.5 + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  margin-top: 1em;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: 495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
-.btn {
-  display: inline-block;
-  padding: 0.375rem 0.75rem;
-  font-weight: 400;
-  text-align: center;
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-  vertical-align: middle;
-  user-select: none;
-  font-size: 1rem;
-  line-height: 1.5;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  position: relative;
-  bottom: -18px;
-  margin-bottom: 20px;
-  transition: color 0.15s ease-in-out, backgroung-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.btn:hover {
-  color: #007bff;
-  background-color: #261bb4;
-  text-decoration: none;
-}
 
 ul {
-  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid hsl(214, 10%, 87%);
+  border-radius: 5px;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
 .weather-temperature img {
   margin-right: 5px;
   height: 64px;
@@ -96,7 +68,18 @@ ul {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
-
-.outline {
-  margin-bottom: 20px;
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
 }
